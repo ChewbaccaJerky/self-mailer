@@ -62,9 +62,18 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "self-mailer_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  # Action Mailer delievery method
+  config.action_mailer.delivery_method = :smtp
+
   # Action Mailer's SMTP settings
   config.action_mailer.smtp_settings = {
-    port: 25
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'gmail.com',
+    user_name:            ENV["gmail_username"],
+    password:             ENV["gmail_password"],
+    authentication:       :plain,
+    enable_starttls_auto: true
   }
   
   # Ignore bad email addresses and do not raise email delivery errors.
