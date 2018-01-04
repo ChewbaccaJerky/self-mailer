@@ -5,8 +5,6 @@
 ## Overview
 [Self Mailer]('https://self-mailer.herokuapp.com/') is an API application that allows users to send an email to themselves using a single endpoint.
 
-![]
-
 ## End Point
 Mailer API's end point
 ```
