@@ -1,6 +1,6 @@
 # Self Mailer API
 
-
+![homepage]('https://github.com/ChewbaccaJerky/self-mailer/blob/master/screenshots/homepage.png')
 
 ## Overview
 [Self Mailer]('https://self-mailer.herokuapp.com/') is an API application that allows users to send an email to themselves using a single endpoint.
