@@ -3,7 +3,6 @@ class Api::MailsController < ApplicationController
 
     def create
         @params = params
-        puts PersonalMailer.send_mail(@params[:to], @params[:subject], @params[:body])
-
+        PersonalMailer.send_mail(@params[:to], @params[:subject], @params[:body])
     end
 end
