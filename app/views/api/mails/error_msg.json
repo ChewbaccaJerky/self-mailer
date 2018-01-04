@@ -1,0 +1,11 @@
+{
+    "error": {
+        "status": 400,
+        "detail": "Error 400 bad request. Please try to send information like 'data'"
+    },
+    "data": {
+       "to": "example@email.com[Required]",
+       "subject": "Title your message[Optional]",
+       "body": "Insert important message here[Required]"    
+    } 
+}
