@@ -4,4 +4,7 @@ class SelfMailer < ApplicationMailer
         @email = email
     end
 
+    def send_mail
+
+    end
 end
