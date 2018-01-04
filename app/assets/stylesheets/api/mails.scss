@@ -8,14 +8,14 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: none;
+    overflow: hidden;
     background: #EEE url('https://images.pexels.com/photos/355988/pexels-photo-355988.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat center;
     background-size: cover;
 }
 
 .container {
     height: 100vh;
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(0,0,0, 0.3);
     
 
     display: flex;
@@ -30,29 +30,35 @@ html, body {
         padding: 0.5em;
 
         h1 {
+            margin: 0 0.5em;
             font-size: 3em;
-            color: #EEE;
-
+            color: #FFF; 
             span {
                 color: $primary-color;
             }
         }
-        a {
-            padding: 0.5em;
-            margin: 0 1em;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1.5em;
-            border: 1px solid $primary-color-light;
-            color: #FFF;
-            background-color: $primary-color-light;
-            border-radius: 0.5em;
 
-            transition: all 1s;
-
-            &:hover {
-                background-color: $primary-color;
-                border-color: $primary-color;
+        .btn-container {
+            // display: flex;
+            // flex-direction: row;
+            // // justify-content: space-between;
+            .btn {
+                padding: 0.5em;
+                margin: 0 1em;
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.5em;
+                border: 1px solid $primary-color-light;
+                color: #FFF;
+                background-color: $primary-color-light;
+                border-radius: 0.5em;
+    
+                transition: all 1s;
+    
+                &:hover {
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                }
             }
         }
     }
