@@ -1,24 +1,22 @@
-# README
+# Self Mailer API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## Overview
+[Self Mailer]('https://self-mailer.herokuapp.com/') is an API application that allows users to send an email to themselves using a single endpoint.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## End Point
+Mailer API's end point
+```
+    method: POST
+    url:    https://self-mailer.herokuapp.com/api/send_mail
+```
+## Expected Payload
+```
+data: {
+    'to': 'example@email.com',
+    'subject': 'Title',
+    'body': 'message'
+}
+```
+## [Documentation]('https://documenter.getpostman.com/view/1627816/self-mailer/7LrcfqJ')
